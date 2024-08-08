@@ -1,0 +1,48 @@
+<!-- src/app/home/home.component.html -->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="/assets/slideshow-image1.jpg" style="width: 103%; height: 350px;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/assets/slideshow-image2.jpg" style="width: 103%; height: 350px;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="/assets/slideshow-image3.jpg" style="width: 103%; height: 350px;">
+  </div>
+
+  <!-- Add more slides as needed -->
+
+  <!-- Navigation dots -->
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <!-- Add more dots for additional slides -->
+  </div>
+</div>
+<div class="container">
+  <h1>Plans</h1>
+  <div class="filters">
+    <button (click)="filterPlans('All')">All</button>
+    <button (click)="filterPlans('South Indian')">South Indian</button>
+    <button (click)="filterPlans('North Indian')">North Indian</button>
+    <button (click)="filterPlans('Chinese')">Chinese</button>
+  </div>
+  <div class="plans">
+    <div class="card" *ngFor="let plan of filteredPlans">
+      <img [src]="plan.image" alt="{{ plan.name }}">
+      <h2>{{ plan.name }}</h2>
+      <p>{{ plan.description }}</p>
+      <p>Dishes we provide</p>
+      <ul>
+        <li *ngFor="let item of plan.items">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+

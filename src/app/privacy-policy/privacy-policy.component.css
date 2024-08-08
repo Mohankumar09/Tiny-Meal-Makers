@@ -1,0 +1,78 @@
+/* src/app/privacy-policy/privacy-policy.component.css */
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Arial, sans-serif; /* Font family example */
+  }
+  
+  .privacy-container h1 {
+    color: #333;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .privacy-container h2 {
+    color: #555;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .privacy-container p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
+  .privacy-container ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-container ul li {
+    background: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #4caf50; /* Green color for border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  .privacy-container ul li:hover {
+    background: #f0fff4; /* Light green background on hover */
+  }
+  
+  .privacy-container ul li::before {
+    content: "✓";
+    color: #4caf50; /* Green color for checkmark */
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .privacy-container a {
+    color: #4caf50; /* Green color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .privacy-container a:hover {
+    color: #1b5e20; /* Darker green on hover */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .privacy-container {
+      padding: 20px;
+    }
+    .privacy-container h1 {
+      font-size: 2.2em;
+    }
+    .privacy-container h2 {
+      font-size: 1.6em;
+    }
+  }
+  

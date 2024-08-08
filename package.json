@@ -1,5 +1,5 @@
 {
-  "name": "tiny-meal-maker",
+  "name": "mongomyatlas",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -18,6 +18,11 @@
     "@angular/platform-browser": "^17.3.0",
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
+    "@fortawesome/angular-fontawesome": "^0.10.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "gapi-script": "^1.2.0",
+    "mongodb": "3.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -34,5 +39,9 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2"
-  }
+  },
+  "description": "mongodb connect",
+  "main": "index.js",
+  "author": "maanavan",
+  "license": "ISC"
 }

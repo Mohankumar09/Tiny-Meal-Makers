@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Categories</h1>
+  <div class="filters">
+    <button (click)="filterPackages('all')">All</button>
+    <button (click)="filterPackages('monthly')">Monthly</button>
+    <button (click)="filterPackages('weekly')">Weekly</button>
+  </div>
+  <h2>Filters</h2>
+  <h2>Plans</h2>
+  <div class="plans">
+    <div class="card" *ngFor="let package of filteredPackages">
+      <div class="badge" [ngClass]="{'monthly': package.category === 'monthly', 'weekly': package.category === 'weekly'}">
+        {{package.category | titlecase}} Package
+      </div>
+      <img [src]="package.image" alt="{{package.name}}">
+      <h2>{{package.name}}</h2>
+      <p>{{package.description}}</p>
+      <p>₹{{package.price}}</p>
+    </div>
+  </div>
+</div>

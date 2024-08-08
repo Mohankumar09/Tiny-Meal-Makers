@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="login-box">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <h2>Sign In Your Account</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" required placeholder="mohan@example.com">
+      </div>
+      <div class="form-group">
+        <label for="password">Password*</label>
+        <div class="password-container">
+          <input type="password" id="password" [(ngModel)]="password" name="password" required placeholder="Enter your password">
+          <i class="fas fa-eye toggle-password" [ngClass]="{'fa-eye': !passwordVisible, 'fa-eye-slash': passwordVisible}" (click)="togglePasswordVisibility()"></i>
+        </div>
+      </div>
+      <button type="submit" class="login-button">Sign In</button>
+    </form>
+    <div class="links">
+      <a href="#">Forgot Password?</a>
+    </div>
+    <div class="social-login">
+      <div class="google-login">
+        <img src="/assets/google-icon.png" alt="Google Icon">
+        <span>Sign up with Google</span>
+      </div>
+    </div>
+    <div class="links">
+      <span>Don't have an account? <a href="/signup">Sign up</a></span>
+    </div>
+  </div>
+</div>

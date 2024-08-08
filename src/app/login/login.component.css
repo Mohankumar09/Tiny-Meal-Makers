@@ -1,0 +1,121 @@
+/* src/app/login/login.component.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  background-image: url('/assets/burger-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px; /* Adjust the top padding to create space */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+.login-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: calc(108% - 30px);
+  padding-right: 30px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc; /* Default color for Font Awesome icons */
+}
+
+.toggle-password:hover {
+  color: #333; /* Color on hover for better visibility */
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #e0e0e0;
+}
+
+.links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.links a {
+  color: #FFB81C;
+  text-decoration: none;
+}
+
+.social-login {
+  margin-top: 10px;
+}
+
+.google-login {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.google-login img {
+  width: 20px;
+  margin-right: 10px;
+}

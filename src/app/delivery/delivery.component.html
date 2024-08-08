@@ -1,0 +1,8 @@
+<h1>Delivery Partner</h1>
+<div *ngFor="let order of orders">
+  <h2>Order ID: {{ order.id }}</h2>
+  <p>{{ order.items }}</p>
+  <p>Customer: {{ order.name }}</p>
+  <p>Address: {{ order.address }}</p>
+  <button (click)="markAsDelivered(order)">Mark as Delivered</button>
+</div>

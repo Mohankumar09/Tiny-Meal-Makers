@@ -1,0 +1,14 @@
+/* src/app/order-history/order-history.component.css */
+.order-history {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    height: 100vh;          /* Full viewport height */
+    text-align: center;
+  }
+  
+  .order-history h1 {
+    font-size: 24px;
+    color: #555;
+  }
+  

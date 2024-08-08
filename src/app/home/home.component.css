@@ -1,0 +1,129 @@
+/* src/app/home/home.component.css */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 20px; /* Adjust spacing between slideshow and plans section */
+  margin-top: 20px; /* Add margin top to create space with header */
+  padding: 20px; /* Equal padding on all sides */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Hide all slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Fade animation for slides */
+.fade {
+  animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.95); /* Initial slightly smaller scale */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Full scale at 100% opacity */
+  }
+}
+
+/* Style navigation dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Container for plans */
+.container {
+  max-width: 1200px;
+  margin: 20px auto; /* Adjusted margin to center and provide space */
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Filters for plans */
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background: #ffa500;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filters button:hover {
+  background: #ff8c00;
+}
+
+/* Plans display */
+.plans {
+  display: flex;
+  flex-wrap: wrap; /* Adjusted to wrap items */
+  justify-content: center; /* Center align items */
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+  width: 250px; /* Adjusted to fixed width */
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+  color: #333;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
